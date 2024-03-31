@@ -9,20 +9,21 @@
     height: 100%;
     width: 100%;
     
+    
 }
 #banner, #features, #experties, #contact{
     background-color:black;
 
 }
-.logo{
+.logo {
     width: 150px;
     height: 60px;
-    bottom:10px;
-    color:red;  
-    margin-right: 100px;
-
-   
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 9999; /* Ensure it's on top of other content */
 }
+
 .picture{
     width:230px;
     height: 200px;
@@ -161,7 +162,6 @@
 #experties{
     width: 100%;
     height: 100%;
-    padding:50px 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
     
@@ -223,11 +223,12 @@
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
-    border: 2px solid cornflowerblue;
+    border: 2px solid aqua;
 }
 .card:hover{
     width: 60%;
     transition: 1s;
+    box-shadow: 0 0 40px aqua;
 }
 .card .layer{
     width: 100%;
@@ -366,6 +367,7 @@
     background-color: aqua;
     color: black;
     box-shadow: 0 0 20px aqua;
+    
 }
 .services{
     display: flex;
@@ -381,9 +383,18 @@
     text-align: center;
     border-radius: 30px;
     background-color:darkolivegreen;
+
     
 }
-
+.service-box i{
+    font-size: 50px;
+    width: 60px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    color: aqua;
+}
 .service-box h3,i{
     color:white;
 }
@@ -404,8 +415,8 @@
     color:black;
 }
 .service-box:hover{
-    transform: translateY(.7rem);
-    transform: 1s;
+    box-shadow: 0 0 20px aqua;
+    border : 2px solid aqua
 }
 form{
     text-align: center;
@@ -453,9 +464,10 @@ footer{
     padding-bottom: 20px;
 }
 footer p{
-    color:blueviolet;
+    color:chartreuse;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    margin-left: 200px;
     font-weight: bold;
     padding-top:10px; 
 }
@@ -483,3 +495,89 @@ footer a i{
     color: black;
     box-shadow: 0 0 20px aqua;
  }
+
+
+ .skills {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skill {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .skill-name {
+    color: aqua;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-ring {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid transparent; /* Transparent border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sk{
+    color:green;
+    text-align: center;
+    box-shadow: 0 0 10px 5px aqua;
+    
+  }
+  .skill-ring::after {
+    content: attr(data-percent) '%';
+    font-size: 20px;
+    color: aqua;
+  }
+  
+  [data-percent='60'] {
+    border: 10px solid red; 
+    box-shadow: 0 0 20px red;
+  }
+    
+  [data-percent='50'] {
+    border: 10px solid blue; 
+    box-shadow: 0 0 20px blue;
+  }
+  [data-percent='65'] {
+    border: 10px solid chartreuse; 
+    box-shadow: 0 0 20px chartreuse;
+  }
+  [data-percent='75'] {
+    border: 10px solid blueviolet; 
+    box-shadow: 0 0 20px blueviolet;
+  }
+  [data-percent='70'] {
+    border: 10px solid aqua; 
+    box-shadow: 0 0 20px aqua;
+  }
+
+
+
+
+  [data-percent='60']:hover{
+    border: 10px solid black; 
+    box-shadow: 0 0 20px whitesmoke;
+  }
+  [data-percent='50']:hover{
+    border: 10px solid white; 
+    box-shadow: 0 0 20px yellowgreen;
+  }
+  [data-percent='65']:hover{
+    
+    box-shadow: 0 0 30px white;
+  }
+  [data-percent='75']:hover{
+    border:10px solid burlywood ;
+    box-shadow: 0 0 30px white;
+  }
+  [data-percent='70']:hover{
+    border:10px solid red;
+    box-shadow: 0 0 30px white;
+  }

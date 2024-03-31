@@ -45,10 +45,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 // Apply transition effect
                 setTimeout(function() {
-                    additionalText.style.color = 'yellow'; // Change color to red
+                    additionalText.style.color = 'aqua'; // Change color to red
                 }, 50); // Delay the color change for 50 milliseconds for the transition effect
             }
         });
     });
     
 });
+new kursor({
+    type: 3
+})

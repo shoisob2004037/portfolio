@@ -9,11 +9,13 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     
 </head>
 <body>
     <section id="banner">
-      <img src="Shaisob.png" alt="logo" class="logo">
+      <a href="#banner"> <img src="Shaisob.png"  alt="logo" class="logo"></a>
       <br>
       <img src="photo_2024-03-20_15-53-41.jpg" alt="Image" class="picture">
       <div class="banner-text">
@@ -22,7 +24,7 @@
         <h2>-<span id="text"></span></h2>
         <p>"Welcome to my portfolio! I'm Mahadi Hasan Shaisob, a Junior Web Developer. It's my First Portfolio where I'll show my Educational Qualification,Skills and my Passion. I love to take Photo of Nature,Stories and I love to travel."</p>
         <br>
-        <a href="Chapter-7.pdf" download=""  class="cv">Download CV</a>
+        <a href="BubbleCV (3).pdf" download=""  class="cv">Download CV</a>
       </div>
      <br>
       <div class="link">
@@ -31,7 +33,7 @@
         <a href="https://www.whatsapp.com/01850487332"><i class='bx bxl-whatsapp' ></i></a>
         <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/"><i class='bx bxl-linkedin' ></i></a>
       </div>
-     
+     <br>
     </section>
     <div id="nav">
         <ul>
@@ -52,7 +54,7 @@
     <section id="experties">
       <div class="title-text">
         <p><i class='bx bxs-brain'></i> Experties</p>
-        <h1>I'm Expert in</h1>
+      
       </div>
       <br>
       
@@ -61,15 +63,14 @@
           <i class='bx bx-code-alt'></i>
           <h3>Web Development</h3>
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt eos iusto cupiditate nesciunt quis? Explicabo in ratione quis animi!
-          </p>
+              I'm a junior front end developer with familier to HTML,CSS and javascript.I want to be expert in web development but its not my carrier . I do it for my passion and i find interest on it. 
           <br>
           <div class="service-box-option">
               <a href="" class="btn">Read More</a>
           </div>
           <div class="additional-text" style="display: none;">
             <br>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore repudiandae cumque aliquid officiis do!
+            I think the work which a person find interest he should do this. Without any passion a person is nothing. So i enjoy it a lot.
           </div>
       </div>
       
@@ -104,7 +105,40 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore repudiandae cumque aliquid officiis dolorem ?
       </div>
   </div>
-
+      </div>
+      <br>
+      <br>
+      <h2 class="sk">My Other Software Skills are : </h2>
+      <br>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-name">C</div>
+          <div class="skill-ring" data-percent="60"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">MATLAB</div>
+          <div class="skill-ring" data-percent="50"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Latex</div>
+          <div class="skill-ring" data-percent="60"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Mathematica</div>
+          <div class="skill-ring" data-percent="65"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">AutoCAD</div>
+          <div class="skill-ring" data-percent="75"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">MS Visio</div>
+          <div class="skill-ring" data-percent="70"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">PSpice</div>
+          <div class="skill-ring" data-percent="75"></div>
+        </div>
       </div>
 
     </section>
@@ -136,7 +170,7 @@
           <div class="layer">
             <div class="info">
               <h1>Macro</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo vel, cum consequuntur voluptates reprehenderit nesciunt itaque placeat odit possimus!</p>
+              <p>This is a macro photography clicked by me on POCO X2 phone.It was clciked by Gcam macro config in 2020.Then it was edited by Adobe lightroom for more strong macro.The gcam is more preferable than stock camera for good shot! </p>
             </div>
 
           </div>
@@ -179,7 +213,8 @@
         <p> <i class='bx bxs-envelope'></i> Contact Me</p>
         <h2>For any Query Contact with me. </h2>
       </div>
-      <form name="submit-to-google-sheet">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="917a480c-fcb9-4d50-a1c1-10dae9e3d084">
         <input type="text"  name="name" required placeholder="Your Name">
         <input type="text"  name="email" required placeholder="Your Email">
         <input type="text" name="address" required placeholder="Your Address">
@@ -196,18 +231,10 @@
      </footer>
      
      
-    <script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzBo3YMO7nHUgeVL01lFaQPrJA62kRNwK0dk3lArqJwNI_aP7YwN_G43ooxHISIZo7I/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-   <script src="website.js"></script>
+
+   <script src="website.js">
+    
+   </script>
 
 </body>
 </html>
