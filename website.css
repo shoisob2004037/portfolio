@@ -463,6 +463,27 @@ footer{
     margin-top: -60px;
     padding-bottom: 20px;
 }
+.footer{
+    display: flex;
+    gap: 100px;
+    margin-left: 190px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.col1 h3 , .col2 h3{
+    font-size: 25px;
+    color: aqua;
+}
+.col1 ul li{
+    list-style: none;
+}
+.col1 ul li a{
+    color: white;
+    font-weight: bold;
+}
+.col2 a{
+    color: black;
+    
+}
 footer p{
     color:chartreuse;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
