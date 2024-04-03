@@ -121,11 +121,12 @@
         height: 120px ;
     }
     
+    
     .logo {
         margin: 0;
         padding: 0;
-        width: 110px ;
-        height: 50px ;
+        width: 80px ;
+        height: 40px ;
         
     }
     
@@ -148,11 +149,122 @@
         height: 100vmax;
         background-color: black;
     }
+    .service-box {
+        width: 100%; /* Make all expertise sections full width */
+        height: auto; /* Allow height to adjust based on content */
+        margin-bottom: 20px; /* Add spacing between expertise sections */
+      }
+    
 }
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 991px) {
+    .skills {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  
+    .skill {
+      flex-basis: 50%; /* Show two skills per row */
+      margin-bottom: 20px; /* Adjust spacing */
+      align-items: center;
+    }
+  
+    .skill-ring {
+      width: 50px; /* Decrease the width */
+      height: 50px; /* Decrease the height */
+      
+    }
+  
+    .skill-ring::after {
+      font-size: 16px; /* Decrease the font size */
+    }
+    .sk{
+        font-size: 20px;
+    }
+    .footer{
+        margin-left: 0; /* Remove left margin */
+        padding-left: 0; /* Remove left padding */
+      }
+      .footer .col1 h3, .footer .col2 h3{
+        font-size: 15px;
+        margin: 0px;
+    }
+    .footer .col1 ul li a , .footer .col2 a{
+        font-size: 15px;
+       
+    }
+    .footer .col1{
+        margin-left: 0px;
+    }
+    footer p{
+        font-size: 18px;
+        
+    }
+    
+  }
+  
+  @media screen and (max-width: 770px) {
     .banner-text h1 {
         font-size: 40px;
+    }
+    .footer p a i{
+      margin-left: 0px;
+    }
+    .skills {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .logo{
+      margin:0;
+      Padding:0;
+      width: 110px;
+      height: 50px;
+    }
+   .picture{
+     margin-top:40px;
+   }
+    .skill {
+      flex-basis: 50%; /* Show two skills per row */
+      margin-bottom: 20px; /* Adjust spacing */
+      align-items: center;
+    }
+  
+    .skill-ring {
+      width: 50px; /* Decrease the width */
+      height: 50px; /* Decrease the height */
+      
+    }
+  
+    .skill-ring::after {
+      font-size: 16px; /* Decrease the font size */
+    }
+    .sk{
+        font-size: 20px;
+    }
+      .footer .col1 h3, .footer .col2 h3{
+        font-size: 15px;
+        color: aqua;
+        margin-top:20px;
+        text-align: center;
+    }
+    .footer .col1 ul li a{
+        font-size: 15px;
+        margin-left:130px;
+        color: chartreuse;
+       
+    }
+    .footer .col2 a{
+      margin-left:100px;
+    }
+    .footer .col1{
+        margin-left: 0px;
+    }
+    footer p{
+        font-size: 18px;
+        margin-left:0;
     }
 
     .banner-btn a {
@@ -459,9 +571,30 @@ form textarea{
     
 }
 footer{
-    background-color:dimgray;
+    background-color:darkslategray;
     margin-top: -60px;
     padding-bottom: 20px;
+}
+.footer{
+    display: flex;
+    gap: 100px;
+    margin-left: 190px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.col1 h3 , .col2 h3{
+    font-size: 25px;
+    color: aqua;
+}
+.col1 ul li{
+    list-style: none;
+}
+.col1 ul li a{
+    color: white;
+    font-weight: bold;
+}
+.col2 a{
+    color: black;
+    
 }
 footer p{
     color:chartreuse;
@@ -524,6 +657,7 @@ footer a i{
     justify-content: center;
     align-items: center;
   }
+  
   .sk{
     color:green;
     text-align: center;
