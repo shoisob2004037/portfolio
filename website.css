@@ -120,6 +120,38 @@
         width: 170px ;
         height: 120px ;
     }
+    .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items horizontally in the center */
+}
+
+.col1, .col2 {
+    margin: 20px 0; /* Add some vertical space between the columns */
+    text-align: center; /* Center the text in each column */
+}
+
+.footer a i {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a i:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 20px aqua;
+}
+
     
     
     .logo {
@@ -208,6 +240,38 @@
     .banner-text h1 {
         font-size: 40px;
     }
+      .footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items horizontally in the center */
+}
+
+.col1, .col2 {
+    margin: 20px 0; /* Add some vertical space between the columns */
+    text-align: center; /* Center the text in each column */
+}
+
+.footer a i {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a i:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 20px aqua;
+}
+
     .footer p a i{
       margin-left: 0px;
     }
