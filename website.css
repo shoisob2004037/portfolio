@@ -655,6 +655,7 @@ footer{
 .col1 ul li a{
     color: white;
     font-weight: bold;
+    margin-botoom: 5px;
 }
 .col2 a{
     color: black;
