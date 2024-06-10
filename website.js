@@ -26,32 +26,4 @@ document.addEventListener('DOMContentLoaded', function(){
         backDelay: 1000,
         loop: true
     });
-
-    // Select all "Read More" buttons
-    var readMoreButtons = document.querySelectorAll('.btn');
-
-    // Loop through each button and add click event listener
-    readMoreButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            // Prevent default link behavior
-            event.preventDefault();
-
-            // Find the sibling additional text element
-            var additionalText = this.parentElement.nextElementSibling;
-
-            // Toggle the visibility of additional text
-            if (additionalText) {
-                additionalText.style.display = 'block'; // Show the additional text
-
-                // Apply transition effect
-                setTimeout(function() {
-                    additionalText.style.color = 'aqua'; // Change color to red
-                }, 50); // Delay the color change for 50 milliseconds for the transition effect
-            }
-        });
-    });
-    
 });
-new kursor({
-    type: 3
-})

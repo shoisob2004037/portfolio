@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Playfair Display', serif;
     
     
 }
@@ -18,10 +19,9 @@
 .logo {
     width: 150px;
     height: 60px;
-    position: fixed;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    z-index: 9999; /* Ensure it's on top of other content */
+    top: 10px; 
+    left: 10px; 
+    
 }
 
 .picture{
@@ -43,17 +43,17 @@
 .banner-text h1{
     font-size: 50px;
     font-weight: bolder;
-    color: chartreuse;
+    color: aqua;
     font-family: monospace;
 }
 .banner-text p{
     font-size: 15px;
-    color:aqua;
+    color:white;
     font-style: italic;
 
 }
 .banner-text h2{
-    color:turquoise;
+    color:white;
     font-weight: bolder;
 }
 .banner-text span{
@@ -217,24 +217,7 @@
     .sk{
         font-size: 20px;
     }
-      .footer .col1 h3, .footer .col2 h3{
-        font-size: 15px;
-        color: aqua;
-        margin-top:20px;
-        margin-left:0;
-        text-align: center;
-    }
-    .footer .col1 ul li a{
-        font-size: 15px;
-        color:white;
-        margin-left: 0px;
-        
-    }
-    .footer .col2 a{
-        font-size: 13px;
-        color:white;
-        
-    }
+    
     
 
     .banner-btn a {
@@ -258,7 +241,7 @@
     margin:auto;
     font-size: 30px;
     font-weight: bold;
-    color:chartreuse;
+    color:white;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -351,8 +334,9 @@
 .photo-head p{
     margin:auto;
     font-size: 30px;
+    margin-top: 20px;
     font-weight: bold;
-    color:chartreuse;
+    color:white;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -363,7 +347,7 @@
 
 }
 .photo-head h4{
-    color:aquamarine;
+    color:white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -380,7 +364,7 @@
 .c-head p{
     margin:auto;
     font-size: 30px;
-    color:chartreuse;
+    color:white;
     text-align: center;
     
 }
@@ -462,9 +446,7 @@
     padding: 2px 1px 2px;
     text-align: center;
     border-radius: 30px;
-    background-color:darkolivegreen;
-
-    
+    background-color:darkolivegreen; 
 }
 .service-box i{
     font-size: 50px;
@@ -573,8 +555,8 @@ footer{
 
 
 footer a i{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background: transparent;
     border: 2px solid aqua;
     border-radius: 50%; 
@@ -594,89 +576,4 @@ footer a i{
     box-shadow: 0 0 20px aqua;
  }
 
-
- .skills {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .skill {
-    text-align: center;
-    margin: 0 20px;
-  }
-  
-  .skill-name {
-    color: aqua;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .skill-ring {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 10px solid transparent; /* Transparent border */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .sk{
-    color:green;
-    text-align: center;
-    box-shadow: 0 0 10px 5px aqua;
-    
-  }
-  .skill-ring::after {
-    content: attr(data-percent) '%';
-    font-size: 20px;
-    color: aqua;
-  }
-  
-  [data-percent='60'] {
-    border: 10px solid red; 
-    box-shadow: 0 0 20px red;
-  }
-    
-  [data-percent='50'] {
-    border: 10px solid blue; 
-    box-shadow: 0 0 20px blue;
-  }
-  [data-percent='65'] {
-    border: 10px solid chartreuse; 
-    box-shadow: 0 0 20px chartreuse;
-  }
-  [data-percent='75'] {
-    border: 10px solid blueviolet; 
-    box-shadow: 0 0 20px blueviolet;
-  }
-  [data-percent='70'] {
-    border: 10px solid aqua; 
-    box-shadow: 0 0 20px aqua;
-  }
-
-
-
-
-  [data-percent='60']:hover{
-    border: 10px solid black; 
-    box-shadow: 0 0 20px whitesmoke;
-  }
-  [data-percent='50']:hover{
-    border: 10px solid white; 
-    box-shadow: 0 0 20px yellowgreen;
-  }
-  [data-percent='65']:hover{
-    
-    box-shadow: 0 0 30px white;
-  }
-  [data-percent='75']:hover{
-    border:10px solid burlywood ;
-    box-shadow: 0 0 30px white;
-  }
-  [data-percent='70']:hover{
-    border:10px solid red;
-    box-shadow: 0 0 30px white;
-  }
+ 
