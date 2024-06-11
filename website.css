@@ -113,6 +113,10 @@
     cursor: pointer;
 
 }
+.sk{
+    color: white;
+    text-align: center;
+}
 @media screen and (max-width: 991px) {
     
     .picture {
