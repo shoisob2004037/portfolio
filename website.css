@@ -17,8 +17,8 @@
 
 }
 .logo {
-    width: 150px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
     top: 10px; 
     left: 10px; 
     
@@ -26,25 +26,25 @@
 
 .picture{
     width:230px;
-    height: 200px;
+    height: 220px;
     border-radius: 50%;
     margin-left: 450px;
+    margin-top: 10px;
     
-}
-.picture:hover{
-    box-shadow: 0 0 20px chartreuse;
 }
 .banner-text{
     text-align: center;
     justify-content:center ;
-    font-family: monospace;
     margin-top: 40px;
 }
 .banner-text h1{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     color: aqua;
-    font-family: monospace;
+   
+}
+.banner-text h2{
+    font-size: 30px;
 }
 .banner-text p{
     font-size: 15px;
@@ -78,23 +78,20 @@
 }
 #nav ul li{
     list-style: none;
-    margin: 40px 10px;
+    margin: 30px 0px;
     
 }
 #nav ul li a, #nav ul li a i{
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     text-transform: uppercase;
 
 }
-#nav ul li a:hover{
-    background-color: chartreuse;
-    transition: 0.5s;
-    border-radius: 5px;
-    padding: 5px 5px 5px 5px;
+.navbar{
+    background-color: #5ce1e6;
 }
+
 #navbtn img{
     width: 40px;
     height: 30px;
@@ -117,117 +114,7 @@
     color: white;
     text-align: center;
 }
-@media screen and (max-width: 991px) {
-    
-    .picture {
-        margin-left: 50%;
-        transform: translateX(-50%);
-        width: 170px ;
-        height: 120px ;
-    }
-    
-    
-    .logo {
-        margin: 0;
-        padding: 0;
-        width: 80px ;
-        height: 40px ;
-        
-    }
-    
-    .banner-text {
-        margin-top: 20px;
-    }
-    
-    #nav {
-        width: 140px;
-    }
 
-    #navbtn {
-        right: 5px;
-    }
-    .contact-btn .btn{
-        width: 150px;
-        height: 40px;
-    }
-    #photo{
-        height: 100vmax;
-        background-color: black;
-    }
-   
-      .skills {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        
-      }
-      
-      .skill {
-        flex-basis: 50%; /* Show two skills per row */
-        margin-bottom: 20px; /* Adjust spacing */
-        align-items: center;
-      }
-    
-      .skill-ring {
-        width: 50px; /* Decrease the width */
-        height: 50px; /* Decrease the height */
-        
-      }
-    
-      .skill-ring::after {
-        font-size: 16px; /* Decrease the font size */
-      }
-      .sk{
-          font-size: 20px;
-      }
-}
-      
-  
-  @media screen and (max-width: 770px) {
-    
-    .banner-text h1 {
-        font-size: 40px;
-    }
-    .skills {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .logo{
-      margin:0;
-      Padding:0;
-      width: 110px;
-      height: 50px;
-    }
-   .picture{
-     margin-top:40px;
-   }
-    .skill {
-      flex-basis: 50%; /* Show two skills per row */
-      margin-bottom: 20px; /* Adjust spacing */
-      align-items: center;
-    }
-  
-    .skill-ring {
-      width: 50px; /* Decrease the width */
-      height: 50px; /* Decrease the height */
-      
-    }
-  
-    .skill-ring::after {
-      font-size: 16px; /* Decrease the font size */
-    }
-    .sk{
-        font-size: 20px;
-    }
-    
-    
-
-    .banner-btn a {
-        display: block;
-    }
-}
 #experties{
     width: 100%;
     height: 100%;
@@ -254,7 +141,6 @@
 .title-text h1, .photo-head h2{
     font-size: 50px;
     color: aqua;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:xx-large;
 }
 #photo{
@@ -309,7 +195,6 @@
 }
 .card .layer .info{
     color: white;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
     text-align: center;
     opacity: 0;
@@ -352,7 +237,7 @@
 }
 .photo-head h4{
     color:white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 #contact{
@@ -396,11 +281,10 @@
     font-size: 25px;
     color: aqua;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 }
 .cv{
-    
     padding: 8px 5px;
     border: 2px solid aquamarine;
     border-radius: 5px;
@@ -450,7 +334,7 @@
     padding: 2px 1px 2px;
     text-align: center;
     border-radius: 30px;
-    background-color:darkolivegreen; 
+    background-color:dimgray; 
 }
 .service-box i{
     font-size: 50px;
@@ -462,10 +346,10 @@
     color: aqua;
 }
 .service-box h3,i{
-    color:white;
+    color:aqua;
 }
 .service-box p, .service-box2 p, .service-box3 p{
-    color: aqua;
+    color: white;
 }
 .btn{
     text-decoration: none;
@@ -535,7 +419,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 .footer .col1 ul li a:hover{
     box-shadow:0 0 20px darkslategray;
@@ -579,5 +463,103 @@ footer a i{
     color: black;
     box-shadow: 0 0 20px aqua;
  }
+
+
+ @media screen and (max-width: 991px) {
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .banner-text h2{
+        font-size: 20px;
+    }
+    .banner-text span{
+        font-size: 18px;
+    }
+    
+    .picture {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 150px ;
+        height: 130px ;
+    }
+    .sk{
+        font-size: 20px;
+    }
+    .photo-head h4{
+        font-size: 20px;
+    }
+    .photo-head p{
+        font-size: 25px;
+    }
+    .photo-head h2{
+        font-size: 20px;
+    }
+    .photo-head h2 i{
+        font-size: 20px;
+    }
+    .logo {
+        margin: 0;
+        padding: 0;
+        width: 80px ;
+        height: 40px ;
+        
+    }
+    
+    .banner-text {
+        margin-top: 20px;
+    }
+    
+    #nav {
+        width: 140px;
+    }
+
+    #navbtn {
+        right: 5px;
+    }
+    .contact-btn .btn{
+        width: 150px;
+        height: 40px;
+    }
+    #photo{
+        height: 100vmax;
+        background-color: black;
+    }
+   
+}
+      
+  
+  @media screen and (max-width: 770px) {
+    
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .banner-text h2{
+        font-size: 20px;
+    }
+    .banner-text p{
+        font-size: 15px;
+    }
+    .banner-text span{
+        font-size: 18px;
+    }
+    .logo{
+      margin:0;
+      Padding:0;
+      width: 110px;
+      height: 50px;
+    }
+    .cv{
+        font-size: 13px;
+    }
+    .link i{
+        font-size: 13px;
+    }
+   .picture{
+     margin-top:40px;
+   }
+    .banner-btn a {
+        display: block;
+    }
+}
 
  
