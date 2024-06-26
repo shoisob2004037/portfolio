@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="icn.png">
     <link rel="stylesheet" href="website.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -14,30 +15,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-    <section id="banner">
-      <a href="#banner"> <img src="Shaisob.png"  alt="logo" class="logo"></a>
-      <br>
-      <img src="photo_2024-03-20_15-53-41.jpg" alt="Image" class="picture">
-      <div class="banner-text">
-        <h2>Hey,It's</h2>
-        <h1> Mahadi Hasan Shaisob</h1>
-        <h2>-<span id="text"></span></h2>
-        <p>"Welcome to my portfolio! I'm Mahadi Hasan Shaisob, a Junior Web Developer. It's my First Portfolio where I'll show my Educational Qualification,Skills and my Passion. I love to take Photo of Nature,Stories and I love to travel."</p>
-        <br>
-        <a href="CV_of_Mahadi_Hasan_Shaisob (1).pdf" download=""  class="cv">Download CV</a>
-      </div>
-     <br>
-      <div class="link">
-        <a href="https://www.facebook.com/hasan.shoisob" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="https://www.instagram.com/_shoisob_is_here_/" target="blank"><i class='bx bxl-instagram'></i></a>
-        <a href="https://github.com/shoisob2004037" target="blank"><i class='bx bxl-github' ></i></a>
-        <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/" target="blank"><i class='bx bxl-linkedin' ></i></a>
-      </div>
-     <br>
-    </section>
+ 
+
+<section id="banner" class="banner">
+  <a href="#banner">
+    <img src="Shaisob1.png" alt="logo" class="logo">
+</a>
+    <div class="container">
+        <div class="row">
+            <!-- Column for the picture -->
+            <div class="col-md-6 pt-3">
+                <img src="photo_2024-03-20_15-53-41.jpg" alt="Image" class="picture">
+                <div class="link pt-5">
+                  <a href="https://www.facebook.com/hasan.shoisob" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                  <a href="https://www.instagram.com/_shoisob_is_here_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://github.com/shoisob2004037" target="_blank"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+              </div>
+            </div>
+            
+            <!-- Column for the details -->
+            <div class="col-md-6">
+                <h2>Hey, It's</h2>
+                <h1 style="color: black;" >Mahadi Hasan Shaisob</h1>
+                <h2>-<span id="text"></span></h2>
+                <p>"Welcome to my portfolio! I'm Mahadi Hasan Shaisob, a Junior Web Developer. It's my First Portfolio where I'll show my Educational Qualification, Skills, and my Passion. I love to take photos of nature, stories, and I love to travel."</p>
+                <a id="cv" href="CV_of_Mahadi_Hasan_Shaisob (1).pdf" download="" class="btn btn-primary cv">Download CV</a>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
     <div id="nav">
         <ul>
             <li><a href="#banner"><i class='bx bx-home' ></i>    Home</a> </li><hr>
@@ -68,7 +77,8 @@
                       <p>
                           I'm a junior front end developer with familier to HTML,CSS and javascript.I want to be expert in web development but its not my carrier . I do it for my passion and i find interest on it. In future i am quite dedicated to some frame works like Bootstraps, React Js etc.
                       </p>
-                      <br>
+                      <p style="color: aqua; ">For Explore more Works of me : </p>
+                  <a href="https://github.com/shoisob2004037?tab=repositories" target="_blank" class="btn btn-info">Explore More</a>
                   </div>
               </div>
               <div class="col-md-4 col-sm-12 pt-2">
@@ -83,14 +93,15 @@
               </div>
              
               <div class="col-md-4 col-sm-12 pt-2">
-                  <div class="service-box">
-                      <i class='bx bxs-camera'></i>
-                      <h3>Photography</h3>
-                      <p>
-                          Photography isn't just a hobby; it's my passion. Through the lens, I capture moments, emotions, and stories, expressing my creativity and unique perspective. It's more than freezing time; it's about sharing experiences and finding inspiration in everyday beauty.
-                      </p>
-                      <br>
-                  </div>
+                <div class="service-box">
+                  <i class='bx bxs-camera'></i>
+                  <h3>Photography</h3>
+                  <p>
+                    Photography isn't just a hobby; it's my passion. Through the lens, I capture moments, emotions, and stories, expressing my creativity and unique perspective. It's more than freezing time; it's about sharing experiences and finding inspiration in everyday beauty.
+                  </p>
+                  <p style="color: aqua;">For Explore more Picture of my Photography: </p>
+                  <a href="https://shoisob2004037.github.io/photo-slider-portfolio-/" target="_blank" class="btn btn-info">Explore More</a>
+                </div>
               </div>
           </div>
       </div>
@@ -132,6 +143,10 @@
 </div>
 </div>
     </section>
+
+
+
+
     <section id="photo">
       <div class="photo-head">
         <p>Hobby</p>
@@ -215,34 +230,40 @@
      </section>
      <footer>
       <div class="container-fluid">
-          <div class="row footer">
-              <div class="col-md-6 col-sm-12 mt-5">
-                  <div class="col1">
-                      <h3>Website Direct Links</h3>
-                      <hr>
-                      <br>
-                      <ul>
-                          <li><a href="#banner">Home</a></li>
-                          <li><a href="#experties">Experties</a></li>
-                          <li><a href="#photo">Hobby</a></li>
-                          <li><a href="#contact">Contact</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-md-6 col-sm-12 mb-5">
-                  <div class="col2">
-                      <h3>Social Links</h3>
-                      <hr>
-                      <br>
-                      <a href="https://www.facebook.com/hasan.shoisob" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                      <a href="https://www.instagram.com/_shoisob_is_here_/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                      <a href="https://github.com/shoisob2004037" target="_blank"><i class='bx bxl-github'></i></a>
-                      <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                  </div>
-              </div>
+        <div class="row footer">
+          <div class="col-md-6 col-sm-12 mt-5">
+            <div class="col1">
+              <h3>Website Direct Links</h3>
+              <hr>
+              <br>
+              <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#experties">Experties</a></li>
+                <li><a href="#photo">Hobby</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
           </div>
+          <div class="col-md-6 col-sm-12 mb-5">
+            <div class="col2">
+              <h3>Social Links</h3>
+              <hr>
+              <br>
+              <a href="https://www.facebook.com/hasan.shoisob" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="https://www.instagram.com/_shoisob_is_here_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+              <a href="https://github.com/shoisob2004037" target="_blank"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+        </div>
       </div>
-  </footer>
+      <div class="container text-center mt-3">
+        <p class="mt-3">&copy; 2024 Mahadi Hasan Shaisob. All rights reserved.</p>
+      </div>
+      <a href="#banner" class="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+      </a>
+    </footer>
   
      
      
