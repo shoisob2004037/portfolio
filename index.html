@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8 name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="icn.png">
     <link rel="stylesheet" href="website.css">
@@ -14,6 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-----Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!----font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 </head>
 <body>
  
@@ -21,12 +28,17 @@
 <section id="banner" class="banner">
   <a href="#banner">
     <img src="Shaisob1.png" alt="logo" class="logo">
-</a>
-    <div class="container">
+  </a>
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Search here...">
+    <button id="searchButton"><i class='bx bx-search-alt-2'></i></button>
+  </div>
+
+    <div class="container" >
         <div class="row">
-            <!-- Column for the picture -->
+
             <div class="col-md-6 pt-3">
-                <img src="photo_2024-03-20_15-53-41.jpg" alt="Image" class="picture">
+                <img src="photo_2024-03-20_15-53-41-removebg-preview.png" alt="Image" class="picture mx-auto">
                 <div class="link pt-5">
                   <a href="https://www.facebook.com/hasan.shoisob" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
                   <a href="https://www.instagram.com/_shoisob_is_here_/" target="_blank"><i class='bx bxl-instagram'></i></a>
@@ -34,8 +46,7 @@
                   <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/" target="_blank"><i class='bx bxl-linkedin'></i></a>
               </div>
             </div>
-            
-            <!-- Column for the details -->
+
             <div class="col-md-6">
                 <h2>Hey, It's</h2>
                 <h1 style="color: black;" >Mahadi Hasan Shaisob</h1>
@@ -75,7 +86,7 @@
                       <i class='bx bx-code-alt'></i>
                       <h3>Web Development</h3>
                       <p>
-                          I'm a junior front end developer with familier to HTML,CSS and javascript.I want to be expert in web development but its not my carrier . I do it for my passion and i find interest on it. In future i am quite dedicated to some frame works like Bootstraps, React Js etc.
+                        As a new front-end developer, I have honed my skills in HTML, CSS, and JavaScript, allowing me to build responsive and dynamic web pages. I am proficient in using frameworks like Bootstrap and Tailwind CSS. Additionally, I am deeply dedicated to mastering React.js, a powerful JavaScript library, to build scalable and efficient user interfaces. 
                       </p>
                       <p style="color: aqua; ">For Explore more Works of me : </p>
                   <a href="https://github.com/shoisob2004037?tab=repositories" target="_blank" class="btn btn-info">Explore More</a>
@@ -86,7 +97,7 @@
                       <i class='bx bxl-adobe'></i>
                       <h3>Graphics Design</h3>
                       <p>
-                          As a beginner in graphics design, I am eager to explore and learn the intricacies of this creative field. While I may be at the initial stages of my journey, I am enthusiastic about honing my skills, experimenting with various design tools and techniques, and pushing the boundaries of my creativity.
+                          As a beginner in graphics design, I am eager to explore and learn the intricacies of this creative field. While I may be at the initial stages of my journey, I am enthusiastic about honing my skills, experimenting with various design tools and techniques, and pushing the boundaries of my creativity.I am simply able to design in Canva. As i am not expert i just did simple default designs and customised as i needed.
                       </p>
                       <br>
                   </div>
@@ -105,8 +116,6 @@
               </div>
           </div>
       </div>
-  
-  
       </div>
       <br>
       <br>
@@ -118,7 +127,6 @@
   <div class="progress" style="height:20px; margin-bottom: 10px;">
     <div class="progress-bar bg-info progress-bar-animated progress-bar-striped text-dark" style="width:75%;">MS Word,Excel,Powerpoint</div>
   </div>
-  <div cla
   <div class="progress" style="height:20px; margin-bottom: 10px;">
     <div class="progress-bar bg-info progress-bar-animated progress-bar-striped text-dark" style="width:60%;">C</div>
   </div>
@@ -277,7 +285,7 @@
         <input type="text" name="phone" required placeholder="Phone Number">
         <textarea name="message" cols="10" rows="10" required placeholder="Your Messages"></textarea>
         <div class="contact-btn">
-          <button type="submit" class="btn">Send</button>
+          <button type="submit">Send</button>
         </div>
       </form>
      </section>
@@ -320,10 +328,9 @@
   
      
      
-
+   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
    <script src="website.js">
-    
-   </script>
 
+   </script>
 </body>
 </html>

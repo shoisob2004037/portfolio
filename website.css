@@ -2,9 +2,40 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Playfair Display', serif;
-    
-    
 }
+
+
+#searchInput {
+    background-color:rgba(0,0,0.5,0.5);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius:10px;
+    color:black;
+    font-weight:bold;
+    height:40px;
+}
+
+#searchButton {
+    width:50px;
+    margin-top:10px;
+    background-color:rgba(0,0,0.5,0.8);
+    border-radius:20px;
+    border:2px solid white;
+    height:40px;
+}
+
+.highlight{
+    background-color: green;
+
+}
+
+
+
+
+
+
+
+
 .carousel-item img {
     width: 100%;
     height: auto;
@@ -17,11 +48,6 @@
       max-height: 320px; 
     }
   }
-
-
-
-
-
 
 #banner{
     height: 100%;
@@ -40,8 +66,8 @@ footer{
     color: #ffffff; 
 }
 .logo {
-    width: 150px;
-    height: 70px;
+    width: 130px;
+    height: 110px;
 }
 
 .picture{
@@ -103,6 +129,9 @@ footer{
     text-decoration: none;
     color: black;
     font-size: 17px;
+    padding-left: 15px;
+    padding-top:5px;
+    margin-top:10px;
     text-transform: uppercase;
 
 }
@@ -289,19 +318,7 @@ footer{
 .service-box p, .service-box2 p, .service-box3 p{
     color: white;
 }
-.btn{
-    text-decoration: none;
-    color:white;
-    background-color: aqua;
-    border-radius: 10px;
-    padding:10px 10px;
-    margin-bottom:10px;
-    
-}
-.btn:hover{
-    box-shadow:0 0 15px aqua;
-    color:black;
-}
+
 .service-box:hover{
     box-shadow: 0 0 20px aqua;
     border : 2px solid aqua
@@ -452,8 +469,8 @@ footer a i{
     .logo {
         margin: 0;
         padding: 0;
-        width: 80px ;
-        height: 40px ;
+        width: 100px ;
+        height: 90px ;
         
     }
     
@@ -462,7 +479,7 @@ footer a i{
     }
     
     #nav {
-        width: 140px;
+        width: 180px;
     }
 
     #navbtn {
@@ -498,8 +515,8 @@ footer a i{
     .logo{
       margin:0;
       Padding:0;
-      width: 110px;
-      height: 50px;
+      width: 100px;
+      height: 90px;
     }
     .cv{
         font-size: 13px;
