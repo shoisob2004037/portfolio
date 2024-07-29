@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-    // Existing navigation toggle functionality
     var navbtn = document.getElementById("navbtn");
     var nav = document.getElementById("nav");
     var menu = document.getElementById("menu");
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.getElementById('searchButton').addEventListener('click', () => {
     const searchValue = document.getElementById('searchInput').value.toLowerCase();
-    const sections = ['banner', 'experties', 'photo', 'contact'];
+    const sections = ['banner', 'experties', 'photo', 'contact','projects'];
     let found = false;
 
     sections.forEach(sectionId => {
@@ -49,12 +48,12 @@ document.getElementById('searchButton').addEventListener('click', () => {
                 element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 found = true;
-                return; // Stop further processing once a match is found and highlighted
+                return; 
             }
         });
 
         if (found) {
-            return; // Stop further processing once a match is found and highlighted
+            return; 
         }
     });
 
@@ -62,3 +61,5 @@ document.getElementById('searchButton').addEventListener('click', () => {
         alert(`No ${document.getElementById('searchInput').value} found in this website!`);
     }
 });
+
+
