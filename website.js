@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    // Smooth scrolling functionality
     var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1000,
         speedAsDuration: true
     });
 
-    // Typed.js functionality
     var typed = new Typed("#text", {
         strings: ["Engineer", "Web Developer", "Photographer"],
         typeSpeed: 100,
