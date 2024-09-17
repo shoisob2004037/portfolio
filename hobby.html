@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8 name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="icn.png">
+    <link rel="stylesheet" href="website.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!---Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <!-----Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-----Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!----font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- Animation
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+</head>
+<body id="body">
+    
+<section id="banner" class="banner">
+    <a href="#banner">
+      <img src="Shaisob1.png" alt="logo" class="logo">
+    </a>
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Search here...">
+      <button id="searchButton"><i class='bx bx-search-alt-2'></i></button>
+    </div>
+   
+    
+    <div id="nav">
+        <ul>
+            <li><a href="index.html"><i class='bx bx-home' ></i>    Home</a> </li><hr>
+            <li><a href="experties.html"><i class='bx bxs-brain'></i> Experties</a> </li><hr>
+            <li><a href="projects.html"><i class="fa-solid fa-list-check"></i></i> Projects</a> </li><hr>
+            <li><a href="hobby.html"><i class="fas fa-book-reader"></i> Hobby</a> </li><hr>
+            <li><a href="aboutme.html"><i class='bx bxs-camera-home'></i> About me</a> </li><hr>
+            <li><a href="index.html"><i class='bx bx-message-rounded-dots'></i> Contact</a> </li>
+
+        </ul>
+      
+    </div>
+    <div id="navbtn">
+     <img src="https://static.thenounproject.com/png/727792-200.png" id="menu">
+    </div>
+
+
+
+
+    <section id="photo">
+        <div class="photo-head container">
+          <p>Hobby</p>
+          <h2 style="font-size: 25px;"><i class='bx bxs-camera' ></i> Photography</h2>
+          <h4>
+            -"Photography isn't just a hobby for me, it's a passion that ignites my soul. Every click of the shutter captures not just an image, but a moment frozen in time. Traveling amplifies this joy, as I explore new places, seeking the perfect shot to frame the memories of my journey. It's not just about preserving moments; it's about encapsulating emotions, stories, and experiences through the lens of my camera.I love to stock stories into frame."
+          </h4>
+        </div>
+  <br>
+  <div class="container-fluid">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;">গ্রামের শীতের সকাল | 2023 </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;">জীবিকা | 2023 </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="13.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: black;">বিকেলের আড্ডা | 2023</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="19.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;">গন্তব্য | 2023</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="16.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;"> বিচ্ছেদ । 2023 </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="14.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;"> সিলেট ভ্রমন | 2023  </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="23.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;">শান্তি এখানে | 2022 </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="20.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;"> কুয়াশার রাজ্যে | 2023 </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-4" style="color: white;">রিজিক | 2022</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="1627027050058-01.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="fs-7 fs-md-5 fs-lg-1 sm-1" style="color: white;"> তারারা | 2021</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+        <div class="container">
+        <p style="color: white; font-style: italic; font-weight: bolder; text-align: center;" class="mb-3">For Explore more Picture of my Photography: </p>
+        <a href="https://shoisob2004037.github.io/photo-slider-portfolio-/" target="_blank" class="btn btn-info">Explore More</a>
+        </div>
+
+        <div class="book-head mt-5 container">
+          <h2 style="font-size: 25px;"><i class="fas fa-book-reader mb-3"></i> Reading Books</h2>
+          
+          
+          <h4>Books fuel my thoughts and broaden my horizons.I am quite interested about Islamic Books like Paradox type. Here are some of my favorite reads:</h4>
+          <div class="book-cards mt-5">
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>প্যারাডক্সিক্যাল সাজিদ</h5><hr>
+              <p>-আরিফ আজাদ</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>প্যারাডক্সিক্যাল সাজিদ</h5><hr>
+              <p>-আরিফ আজাদ</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>মুক্ত বাতাসের খোঁজে</h5><hr>
+              <p>-লস্ট মডেস্টি</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>প্রশান্তির খোঁজে</h5><hr>
+              <p>-উস্তাদ নোমান আলী খান</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>গল্পগুলো অন্যরকম</h5><hr>
+              <p>-আরিফ আজাদ</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>আরজ আলী সমীপে</h5><hr>
+              <p>-আরিফ আজাদ</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>আমার বন্ধু রাশেদ</h5>
+              <p>-মুহম্মদ জাফর ইকবাল</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>নবি জীবনের গল্প</h5><hr>
+              <p>-আরিফ আজাদ</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>বেলা ফুরাবার আগে</h5><hr>
+              <p>-আরিফ আজাদ</p>
+            </div>
+            <div class="book-card">
+              <i class="fas fa-book"></i>
+              <h5>আমার বন্ধু রাশেদ</h5><hr>
+              <p>-মুহম্মদ জাফর ইকবাল</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container travel-head mt-5  mb-5">
+          <h2 style="font-size: 25px;"><i class='bx bx-globe'></i> Traveling</h2>
+          <h4>
+            Exploring new places fills me with joy and curiosity. Each journey adds a new chapter to my life, whether it's the busy streets of a city or the peaceful solitude of nature.
+          </h4>
+          <!-- <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo1.jpg" class="img-fluid" alt="Travel Photo 1">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo2.jpg" class="img-fluid" alt="Travel Photo 2">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo3.jpg" class="img-fluid" alt="Travel Photo 3">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo4.jpg" class="img-fluid" alt="Travel Photo 4">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo5.jpg" class="img-fluid" alt="Travel Photo 5">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo6.jpg" class="img-fluid" alt="Travel Photo 6">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo7.jpg" class="img-fluid" alt="Travel Photo 7">
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <img src="travel-photo8.jpg" class="img-fluid" alt="Travel Photo 8">
+            </div>
+          </div> -->
+        </div>
+      </section>
+        
+      <footer>
+        <div class="container-fluid">
+          <div class="row footer justify-content-center">
+            
+            <!-- Website Direct Links -->
+            <div class="col-12 mt-5">
+              <div class="col1 text-center">
+                <h3>Website Direct Links</h3>
+                <hr>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="index.html">Home</a></li>
+                  <li class="list-inline-item"><a href="experties.html">Experties</a></li>
+                  <li class="list-inline-item"><a href="hobby.html">Hobby</a></li>
+                  <li class="list-inline-item"><a href="index.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Social Links -->
+            <div class="col-12 mb-5">
+              <div class="col2 text-center">
+                <h3>Social Links</h3>
+                <hr>
+                <a href="https://www.facebook.com/hasan.shoisob" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/_shoisob_is_here_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/shoisob2004037" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mahadi-hasan-shaisob-bb72892b9/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      
+        <!-- Footer Bottom Text -->
+        <div class="container text-center mt-3">
+          <p class="mt-3 mb-5">&copy; 2024 Mahadi Hasan Shaisob. All rights reserved.</p>
+        </div>
+      
+        <!-- Back to Top Button -->
+        <a href="#banner" class="back-to-top">
+          <i class='bx bx-up-arrow-alt'></i>
+        </a>
+      </footer>
+      
+    
+                   
+                   
+                 <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+                 <script src="website.js">
+              window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchValue = urlParams.get('search');
+    
+    if (searchValue) {
+        const sections = ['banner', 'about', 'services']; // Sections for this page
+        let found = false;
+
+        sections.forEach(sectionId => {
+            const section = document.getElementById(sectionId);
+            if (!section) return; // Skip if section doesn't exist
+
+            const elements = section.querySelectorAll('p, h1, h2, h3, button');
+
+            elements.forEach(element => {
+                const text = element.textContent.toLowerCase();
+                if (text.includes(searchValue.toLowerCase())) {
+                    const regex = new RegExp(`(${searchValue})`, 'gi');
+                    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    found = true;
+                }
+            });
+        });
+
+        if (!found) {
+            alert(`No results for "${searchValue}" found on this page.`);
+        }
+    }
+});
+
+</script>
+</body>
+</html>  

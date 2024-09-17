@@ -29,16 +29,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-
 document.getElementById('searchButton').addEventListener('click', () => {
     const searchValue = document.getElementById('searchInput').value.toLowerCase();
-    const sections = ['banner', 'experties', 'photo', 'contact','projects'];
+    const sections = ['banner', 'experties', 'photo', 'contact', 'projects']; 
     let found = false;
 
     sections.forEach(sectionId => {
         const section = document.getElementById(sectionId);
-        const elements = section.querySelectorAll('p, h1, h2, h3, button');
+        if (!section) return; 
 
+        const elements = section.querySelectorAll('p, h1, h2, h3, button');
+        
         elements.forEach(element => {
             const text = element.textContent.toLowerCase();
             if (text.includes(searchValue)) {
@@ -46,18 +47,17 @@ document.getElementById('searchButton').addEventListener('click', () => {
                 element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 found = true;
-                return; 
+                return;
             }
         });
 
-        if (found) {
-            return; 
-        }
+        if (found) return;
     });
 
     if (!found) {
-        alert(`No ${document.getElementById('searchInput').value} found in this website!`);
+        window.location.href = `otherpage.html?search=${searchValue}`; 
     }
 });
+
 
 
